@@ -28,12 +28,9 @@ class kibana($elasticsearch_server ='localhost:9200')
 
   file { '/var/vhosts/kibana/html/':
     ensure => 'directory',
-    group  => '0',
-    mode   => '0777',
-    owner  => '0',
   }
 
-  file { '/var/vhosts/kibana/html/config.php':
+  file { '/var/vhosts/kibana/htdocs/config.php':
     ensure   => 'file',
     group    => '0',
     mode     => '0664',
