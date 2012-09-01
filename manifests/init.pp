@@ -26,9 +26,6 @@ class kibana($elasticsearch_server ='localhost:9200')
     source => 'puppet:///modules/kibana/kibana.conf',
   }
 
-  file { '/var/vhosts/kibana/html/':
-    ensure => 'directory',
-  }
 
   file { '/var/vhosts/kibana/htdocs/config.php':
     ensure   => 'file',
