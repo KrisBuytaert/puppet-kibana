@@ -1,3 +1,6 @@
 kibana
 
 This is the kibana module.
+Is manages and installs the old php version of kibana for you
+If you want to deploy the ruby version I`m working 
+on another module that can be installed next to the PHP version.
